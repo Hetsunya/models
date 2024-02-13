@@ -115,7 +115,7 @@
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
@@ -136,7 +136,7 @@
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
@@ -382,7 +382,7 @@
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
+					<ShowLabel>false</ShowLabel>
 					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1707897600000</OccurrenceDate>
@@ -391,11 +391,11 @@
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Code><![CDATA[4]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 					</RecurrenceCode>
 					<FreezeXAxis>true</FreezeXAxis>
-					<SamplesToKeep>100</SamplesToKeep>
+					<SamplesToKeep>1000</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
 			<AgentLinks>
@@ -1221,7 +1221,7 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 					</Labels>
 					<ShowLegend>false</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
-					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowUnits>HOUR</TimeWindowUnits>
 					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
 					<VerScaleToExpression><![CDATA[4]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
@@ -1235,10 +1235,10 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 					<Expression2><![CDATA[timeSpentInDelay]]></Expression2>
 					<Expression2Flag>false</Expression2Flag>
 						<PointStyle>NONE</PointStyle>
-						<LineWidth>1.0</LineWidth>
+						<LineWidth>3.0</LineWidth>
 					</DatasetExpression>
 					<SamplesToKeep>100</SamplesToKeep>
-					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<TimeWindowExpression><![CDATA[4]]></TimeWindowExpression>
 					<FillAreaUnderLine>true</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
