@@ -111,7 +111,7 @@
 				<Variable Class="Parameter">
 					<Id>1707816285724</Id>
 					<Name><![CDATA[enterTime]]></Name>
-					<X>80</X><Y>-30</Y>
+					<X>120</X><Y>-30</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -155,7 +155,7 @@
 				<Connector>
 					<Id>1707295040378</Id>
 					<Name><![CDATA[connector2]]></Name>
-					<X>210</X><Y>-20</Y>
+					<X>500</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -181,14 +181,14 @@
 						<ItemName><![CDATA[out]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
-						<Point><X>290</X><Y>70</Y></Point>
-						<Point><X>230</X><Y>70</Y></Point>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-100</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1707295300661</Id>
 					<Name><![CDATA[connector3]]></Name>
-					<X>210</X><Y>50</Y>
+					<X>200</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -215,13 +215,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-150</X><Y>0</Y></Point>
+						<Point><X>-140</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1707295305411</Id>
 					<Name><![CDATA[connector4]]></Name>
-					<X>400</X><Y>50</Y>
+					<X>360</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -248,7 +248,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-150</X><Y>0</Y></Point>
+						<Point><X>-120</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -256,7 +256,7 @@
     			<DataSet>
 					<Id>1707816374716</Id>
 					<Name><![CDATA[ArrayList]]></Name>
-					<X>370</X><Y>-30</Y>
+					<X>400</X><Y>-30</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -276,6 +276,24 @@
 					<SamplesToKeep>100</SamplesToKeep>
 				</DataSet>
 			</AnalysisData>
+			<Connectivity>
+				<ExcelFile>
+					<Id>1708422347581</Id>
+					<Name><![CDATA[excelFile]]></Name>
+					<X>230</X><Y>-60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ResourceReference>
+						<PackageName><![CDATA[lab2my8]]></PackageName>
+						<ClassName><![CDATA[Table.xlsx]]></ClassName>
+					</ResourceReference>
+					<SaveInSnapshot>true</SaveInSnapshot>
+					<LoadOnStartup>true</LoadOnStartup>
+					<SaveOnDispose>true</SaveOnDispose>
+				</ExcelFile>
+			</Connectivity>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1707295031742</Id>
@@ -501,7 +519,7 @@
 				<EmbeddedObject>
 					<Id>1707295040333</Id>
 					<Name><![CDATA[queue]]></Name>
-					<X>210</X><Y>30</Y>
+					<X>200</X><Y>30</Y>
 					<Label><X>-10</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -550,6 +568,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[forceStatisticsCollection]]></Name>
@@ -618,7 +639,7 @@
 				<EmbeddedObject>
 					<Id>1707295040354</Id>
 					<Name><![CDATA[delay]]></Name>
-					<X>400</X><Y>30</Y>
+					<X>360</X><Y>30</Y>
 					<Label><X>-5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -659,6 +680,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[forceStatisticsCollection]]></Name>
@@ -669,7 +693,10 @@
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[enterTime = time();]]></Code>
+								<Code><![CDATA[enterTime = time();
+
+insertInto(db_table).columns(db_table.queue_size).values(queue.statsSize.max());
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -810,7 +837,7 @@ ArrayList.add(timeSpentInDelay);]]></Code>
     			<TimePlot>
 					<Id>1707816410562</Id>
 					<Name><![CDATA[plot]]></Name>
-					<X>-130</X><Y>70</Y>
+					<X>-50</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -874,10 +901,10 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
-    			<TimeStackChart>
-					<Id>1708340821503</Id>
-					<Name><![CDATA[chart]]></Name>
-					<X>290</X><Y>100</Y>
+    			<TimePlot>
+					<Id>1708422668101</Id>
+					<Name><![CDATA[plot1]]></Name>
+					<X>320</X><Y>70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -885,7 +912,7 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1708416000000</OccurrenceDate>
+					<OccurrenceDate>1708502400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
@@ -895,15 +922,15 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>360</Width>
-					<Height>210</Height>
+					<Width>380</Width>
+					<Height>280</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>280</Width>
-						<Height>120</Height>
+						<Width>300</Width>
+						<Height>190</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -921,20 +948,26 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 					<ShowLegend>true</ShowLegend>
 					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
 					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
-					<TimeWindowExpression><![CDATA[360]]></TimeWindowExpression>
-					<DatasetExpression>
-					<Id>1708340823047</Id>
-					<Expression><![CDATA[my_dataset]]></Expression>
-					<Color>-7667573</Color>
-					<Expression2><![CDATA[queue.size()]]></Expression2>
-					<Expression2Flag>true</Expression2Flag>
-							<Title><![CDATA[queueMax]]></Title>
-					</DatasetExpression>
-					<SamplesToKeep>100000</SamplesToKeep>
-					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[360]]></VerScaleToExpression>
 					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Title]]></Title>
+					<Id>1708422668695</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-9728477</Color>
+					<Expression2><![CDATA[queue.statsSize.max()]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>10000</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[360]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
-    			</TimeStackChart>
+    			</TimePlot>
 			</Presentation>
 
 				</Level>
@@ -955,11 +988,19 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 	</Frame>
 	<Database>
 		<Logging>false</Logging>
-		<AutoExport>false</AutoExport>
-		<ShutdownCompact>false</ShutdownCompact>
+		<AutoExport>true</AutoExport>
+		<ShutdownCompact>true</ShutdownCompact>
 		<ImportSettings>
 		</ImportSettings>
 		<ExportSettings>
+			<ExportExcelResourceReference>
+				<PackageName><![CDATA[lab2my8]]></PackageName>
+				<ClassName><![CDATA[Table.xlsx]]></ClassName>
+			</ExportExcelResourceReference>
+			<TableReference>
+				<PackageName><![CDATA[lab2my8]]></PackageName>
+				<ClassName><![CDATA[db_table]]></ClassName>
+			</TableReference>
 		</ExportSettings>
 	</Database>
 	
@@ -1051,6 +1092,13 @@ ArrayList.add(timeSpentInDelay);]]></Code>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	
 	</Experiments>
+	<ModelResources>
+		<Resource>
+			<Path><![CDATA[Table.xlsx]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+			<Location>FILE_SYSTEM</Location>
+		</Resource>
+	</ModelResources>
     <RequiredLibraryReference>
 		<LibraryName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></LibraryName>
 		<VersionMajor>1</VersionMajor>

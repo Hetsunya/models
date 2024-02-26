@@ -109,30 +109,9 @@
 			<ConnectionsId>1707215486046</ConnectionsId>
 			<Variables>
 				<Variable Class="Parameter">
-					<Id>1707812400198</Id>
-					<Name><![CDATA[timeSpentInDelay]]></Name>
-					<X>620</X><Y>-40</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<ParameterEditor>
-							<Id>1707812400196</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1707815251707</Id>
 					<Name><![CDATA[enterTime]]></Name>
-					<X>620</X><Y>-80</Y>
+					<X>620</X><Y>-40</Y>
 					<Label><X>20</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -219,8 +198,8 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1707290811095</Id>
-					<Name><![CDATA[connector]]></Name>
+					<Id>1707290811097</Id>
+					<Name><![CDATA[connector4]]></Name>
 					<X>490</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -239,39 +218,6 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[lab2]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[timeMeasureStart]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureStart]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-80</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1707290811097</Id>
-					<Name><![CDATA[connector4]]></Name>
-					<X>400</X><Y>80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[lab2]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[timeMeasureStart]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureStart]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[lab2]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queue1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -281,12 +227,12 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-100</X><Y>0</Y></Point>
+						<Point><X>-190</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1707290815457</Id>
-					<Name><![CDATA[connector3]]></Name>
+					<Id>1707290815459</Id>
+					<Name><![CDATA[connector5]]></Name>
 					<X>710</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -305,39 +251,6 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[lab2]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[timeMeasureEnd]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureEnd]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1707290815459</Id>
-					<Name><![CDATA[connector5]]></Name>
-					<X>630</X><Y>80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[lab2]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[timeMeasureEnd]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureEnd]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[lab2]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[delay1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -347,32 +260,11 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-100</X><Y>0</Y></Point>
+						<Point><X>-180</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
 			<AnalysisData>
-    			<Statistics>
-					<Id>1707297940447</Id>
-					<Name><![CDATA[statistics]]></Name>
-					<X>240</X><Y>0</Y>
-					<Label><X>15</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>true</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1707379200000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</RecurrenceCode>
-					<Discrete>false</Discrete>
-				</Statistics>
     			<DataSet>
 					<Id>1707812448731</Id>
 					<Name><![CDATA[ArrayList]]></Name>
@@ -400,7 +292,7 @@
 				<ExcelFile>
 					<Id>1707821149514</Id>
 					<Name><![CDATA[excelFile]]></Name>
-					<X>440</X><Y>-60</Y>
+					<X>460</X><Y>-10</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -998,149 +890,14 @@
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[timeSpentInDelay = time() - enterTime;
-ArrayList.add(timeSpentInDelay);
+								<Code><![CDATA[ArrayList.add(time() - enterTime);
+//ArrayList.add(delay1.getDelayTime());
 
-insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).values(timeSpentInDelay, time()).execute();]]></Code>
+insertInto(db_table).columns(db_table.service_time, db_table.purchase_time, db_table.queue_size).values(time() - enterTime, time(), queue1.statsSize.max()).execute();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1707290809691</Id>
-					<Name><![CDATA[timeMeasureStart]]></Name>
-					<X>400</X><Y>60</Y>
-					<Label><X>-70</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureStart]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-							<ClassName><![CDATA[TimeMeasureStart]]></ClassName>
-							<ItemName><![CDATA[1412336243204]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1707290814144</Id>
-					<Name><![CDATA[timeMeasureEnd]]></Name>
-					<X>610</X><Y>60</Y>
-					<Label><X>-55</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[TimeMeasureEnd]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-							<ClassName><![CDATA[TimeMeasureEnd]]></ClassName>
-							<ItemName><![CDATA[1412336243203]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[startObjects]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[{ timeMeasureStart }]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[datasetCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -1265,70 +1022,6 @@ insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).valu
 					<FillAreaUnderLine>true</FillAreaUnderLine>
 					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
     			</TimePlot>
-    			<Histogram>
-					<Id>1707291039920</Id>
-					<Name><![CDATA[chart]]></Name>
-					<X>590</X><Y>90</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>false</AutoUpdate>
-					<OccurrenceAtTime>true</OccurrenceAtTime>
-					<OccurrenceDate>1707292800000</OccurrenceDate>
-					<OccurrenceTime Class="CodeUnitValue">
-						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</OccurrenceTime>
-					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
-					</RecurrenceCode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
-					<Height>230</Height>
-					<BackgroundColor/>
-					<BorderColor/>
-					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>180</Width>
-						<Height>170</Height>
-						<BackgroundColor>-1</BackgroundColor>
-						<BorderColor>-16777216</BorderColor>
-						<GridColor>-12566464</GridColor>
-					</ChartArea>
-					<Legend>
-						<Place>EAST</Place>
-						<TextColor>-16777216</TextColor>
-						<Size>30</Size>
-					</Legend>
-					<Labels>
-						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
-						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
-						<TextColor>-12566464</TextColor>
-					</Labels>
-					<ShowLegend>false</ShowLegend>
-					<ShowPDF>true</ShowPDF>
-					<ShowCDF>false</ShowCDF>
-					<ShowMean>false</ShowMean>
-					<Bars>
-						<Direction>UP</Direction>
-						<RelativeWidth>0.9</RelativeWidth>
-					</Bars>
-					<HistogramDataExpression>
-					<Id>1707291040797</Id>
-					<Expression><![CDATA[timeMeasureEnd.distribution]]></Expression>
-						<ColorPDF>-65281</ColorPDF>
-						<ColorCDF>-12004916</ColorCDF>
-						<ColorLowPercent>-32944</ColorLowPercent>
-						<ColorHighPercent>-8097537</ColorHighPercent>
-						<ColorMean>-6632142</ColorMean>
-						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[time]]></Title>							
-					</HistogramDataExpression>
-    			</Histogram>
 				<EmbeddedObjectPresentation>
 					<Id>1707293228236</Id>
 					<Name><![CDATA[delay1_presentation]]></Name>
@@ -1453,7 +1146,7 @@ insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).valu
 		<Height>600</Height>
 	</Frame>
 	<Database>
-		<Logging>true</Logging>
+		<Logging>false</Logging>
 		<AutoExport>true</AutoExport>
 		<ShutdownCompact>true</ShutdownCompact>
 		<ImportSettings>
@@ -1466,118 +1159,6 @@ insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).valu
 			<TableReference>
 				<PackageName><![CDATA[lab2]]></PackageName>
 				<ClassName><![CDATA[db_table]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_messages_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_movement_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_movement_stats_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_parameters_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_statechart_states_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_statechart_stats_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agent_type_statechart_stats_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[agents_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[datasets_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[events_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[flowchart_entries_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[flowchart_process_states_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[flowchart_stats_time_in_state_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[fluid_rates_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[fluid_storages_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[fluid_units_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[fluid_utilization_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[histograms_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[library_block_parameters_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[library_blocks_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[resource_pool_task_stats_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[resource_pool_utilization_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[resource_unit_states_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[resource_unit_task_stats_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[resource_unit_utilization_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[statechart_transitions_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[statistics_log]]></ClassName>
-			</TableReference>
-			<TableReference>
-				<PackageName><![CDATA[lab2]]></PackageName>
-				<ClassName><![CDATA[trace_log]]></ClassName>
 			</TableReference>
 		</ExportSettings>
 	</Database>
@@ -1613,7 +1194,7 @@ insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).valu
 			<Name><![CDATA[Simulation]]></Name>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
-			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
@@ -1645,9 +1226,6 @@ insertInto(db_table).columns(db_table.service_time, db_table.purchase_time).valu
 			</Presentation>
 
 			<Parameters>			
-				<Parameter>
-					<ParameterName><![CDATA[timeSpentInDelay]]></ParameterName>
-				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[enterTime]]></ParameterName>
 				</Parameter>
